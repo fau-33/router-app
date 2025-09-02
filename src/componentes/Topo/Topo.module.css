@@ -1,5 +1,47 @@
-.container_topo {
+.topo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+
+  background-color: #f0f4f8;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #ddd;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2.9rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0070f3;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: #005bb5;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link {
+  text-decoration: none;
+  background-color: #0070f3;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.link:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
 }

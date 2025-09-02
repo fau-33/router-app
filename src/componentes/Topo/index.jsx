@@ -1,16 +1,20 @@
 import Link from "next/link";
+import styles from "./Topo.module.css";
 
 export default function Topo() {
   return (
-    <div>
-      <img
-        src="https://images.pexels.com/photos/1030975/pexels-photo-1030975.png?auto=compress&cs=tinysrgb&h=80"
-        alt="Logo"
-      />
-      <nav>
-        <Link href="/">Home</Link>
-        <Link href="/novapagina">Nova Página</Link>
+    <header className={styles.topo}>
+      <Link className={styles.logo} href="/">
+        Logo
+      </Link>
+      <nav className={styles.nav}>
+        <Link className={styles.link} href="/">
+          Home
+        </Link>
+        <Link className={styles.link} href="/novapagina">
+          Nova Página
+        </Link>
       </nav>
-    </div>
+    </header>
   );
 }
